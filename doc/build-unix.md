@@ -69,6 +69,17 @@ For Ubuntu 12.04 and later or Debian 7 and later libboost-all-dev has to be inst
 
 	sudo apt-get install libboost-all-dev
 
+Berkeley DB 4.8 is required to run the wallet.
+For Ubuntu 18.04 and later:
+
+The PPA packages are obsolete, install db4.8 using the [script in contrib/](/contrib/install_db4.sh):
+
+```shell
+./contrib/install_db4.sh `pwd`
+```
+
+For older versions, the PPA can be used (not recommended):
+
  db4.8 packages are available [here](https://launchpad.net/~bitcoin/+archive/bitcoin).
  You can add the repository using the following command:
 
